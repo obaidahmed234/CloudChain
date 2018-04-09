@@ -1,0 +1,34 @@
+﻿#dvTop {
+    width:100%;
+    height:70px;
+    background-color:#f60101;
+    border-radius:10px 10px 0px 0px;
+}
+#dvMenu {
+    width:100%;
+    height:50px;
+    background-color:#f37d7d;
+    border-radius:0px 0px 10px 0px;
+}
+#dvLeft{
+    width:20%;
+    height:450px;
+    background-color:#f37d7d;
+    float:left;
+}
+#dvMiddle{
+    width:80%;
+    height:100%;
+    background-color:white;
+    float:left;
+}
+#dvBottom {
+    width: 100%;
+    height: 30px;
+    background-color:#f60101;
+    float: left;
+    border-radius:0px 0px 10px 10px;
+}
+h1{
+    color:#f60101;
+}

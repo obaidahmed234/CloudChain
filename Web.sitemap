@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="home.aspx" title="Home"  description="">
+      
+        <siteMapNode url="task1.aspx" title="TASK # 1"  description="" />
+        <siteMapNode url="task2.aspx" title="TASK # 2"  description="" />
+      <siteMapNode url="task3.aspx" title="TASK # 3"  description="">
+        <siteMapNode url="task3home.aspx" title="Home"  description=""/>
+        <siteMapNode url="task3login.aspx" title="Login"  description=""/>
+        <siteMapNode url="task3product.aspx" title="My Products"  description=""/>
+        <siteMapNode url="task3contact.aspx" title="Contact Us"  description=""/>
+      </siteMapNode>
+        <siteMapNode url="task4.aspx" title="TASK # 4"  description="" />
+      <siteMapNode url="task5.aspx" title="TASK # 5"  description="" />
+      <siteMapNode url="Theme.aspx" title="Theme Manager"  description="" />
+    <siteMapNode url="localization.aspx" title="Localization"  description="" />
+    <siteMapNode url="globalization.aspx" title="Globalization"  description="" />
+    <siteMapNode url="connected.aspx" title="Connected Classes"  description="" />
+    <siteMapNode url="disconnected.aspx" title="Dissconnected Classes"  description="" />
+  <siteMapNode url="linq.aspx" title="LINQ"  description="" />
+  <siteMapNode url="silverlight.aspx" title="Silver Light"  description="" />
+    </siteMapNode>
+  
+  
+</siteMap>

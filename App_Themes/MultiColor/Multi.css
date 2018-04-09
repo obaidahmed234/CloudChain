@@ -1,0 +1,74 @@
+﻿#dvTop {
+    width:100%;
+    height:70px;
+    background-color:#001c9f;
+    animation:dvTop 10s;
+    border-radius:10px 10px 0px 0px;
+}
+#dvMenu {
+    width:100%;
+    height:50px;
+    background-color:lightblue;
+    animation:dvMenu 10s;
+    border-radius:0px 0px 10px 0px;
+}
+#dvLeft{
+    width:20%;
+    height:450px;
+    background-color:lightblue;
+    animation:dvLeft 10s;
+    float:left;
+}
+#dvMiddle{
+    width:80%;
+    height:100%;
+    background-color:white;
+    float:left;
+}
+#dvBottom {
+    width: 100%;
+    height: 30px;
+    background-color:#001c9f;
+    float: left;
+    animation:dvBottom 10s;
+    border-radius:0px 0px 10px 10px;
+}
+@keyframes dvTop
+{
+0%   {background-color:darkgoldenrod;}
+25%  {background-color:darkgrey;}
+50%  {background-color:darkcyan;}
+75%  {background-color:darkkhaki}
+100% {background-color:darkolivegreen;}
+}@keyframes dvLeft
+{
+0%   {background-color:lightblue;}
+25%  {background-color:lightpink;}
+50%  {background-color:lightgoldenrodyellow;}
+75%  {background-color:lightyellow}
+100% {background-color:lightgrey;}
+}@keyframes dvMenu
+{
+0%   {background-color:lightpink;}
+25%  {background-color:lightblue;}
+50%  {background-color:lightgoldenrodyellow;}
+75%  {background-color:lightgreen}
+100% {background-color:lightyellow;}
+}@keyframes dvBottom
+{
+0%   {background-color:lightgoldenrodyellow;}
+25%  {background-color:lightgreen;}
+50%  {background-color:lightblue;}
+75%  {background-color:lightyellow;}
+100%  {background-color:lightpink;}
+}h1{
+       animation:dvh1 10s;
+}
+@keyframes dvh1
+{
+0%   {color:darkgoldenrod;}
+25%  {color:darkgrey;}
+50%  {color:darkcyan;}
+75%  {color:darkkhaki}
+100% {color:darkolivegreen;}
+}
