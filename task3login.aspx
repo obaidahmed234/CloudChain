@@ -1,65 +1,93 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainPage.master" AutoEventWireup="true" CodeFile="task3login.aspx.cs" Inherits="task3login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        #login {
+            width:100%;
+            height:450px;
+            align-items:center;
+            background-color:#2297e5;
+        }
+        .login_table {
+            
+            height: 239px;
+            margin-left: 400px;
+            padding-top:100px;
+    
+            
+        }
+        #login_name {
+           padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3ca49e;
+    box-shadow: 3px 8px 22px -12px;
+        }
+        #login_password {
+           padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3ca49e;
+    box-shadow: 3px 8px 22px -12px;
+        }
+      
+       
+        .login_column {
+            font-size: x-large;
+            width: 80px;
+            height: 9px;
+            text-align: right;
+        }
+        
+        
+       
+        .auto-style1 {
+            width: 80px;
+            
+        }
+        
+        
+       
+    </style>
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <script src="jquery-2.1.4.js"></script>
-    <script src="jquery-2.1.4.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-        $("#txtName").blur(function () {
-        if ($("#txtName").val() == "")
-        $("#NameValidator").show("slow");
-        else
-        $("#NameValidator").hide("slow");
-        });
-        $("#txtPassword").blur(function () {
-        if ($("#txtPassword").val() == "")
-        $("#PassValidator").show("slow");
-        else
-        $("#PassValidator").hide("slow");
-        });
-     $("#btnLogin").click(function () {
+    
+    <body>
+    <div>
+    
+     <div id="login">
+   
+         <table class="login_table">
+             <tr>
+                 <td class="login_column">UserName:</td>
+                 <td >
+                     <asp:TextBox ID="loginNametxt" runat="server" Font-Names="Times New Roman" Font-Size="Large" Height="24px" Width="148px"></asp:TextBox>  
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="loginNametxt" EnableClientScript="False" ErrorMessage="Required" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="login_column">Password:</td>
+                 <td >
+                     <asp:TextBox ID="loginpasstxt" runat="server" Font-Names="Times New Roman" Font-Size="Large" Height="24px" Width="147px" TextMode="Password"></asp:TextBox> 
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="loginpasstxt" EnableClientScript="False" ErrorMessage="Required" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                 </td>
+             </tr>
+             <tr>
+                 <td class="auto-style1" ></td>
+                 <td >
+                     <asp:Button ID="login_submit" runat="server" Font-Bold="True" Font-Names="Times New Roman" Font-Size="Large" OnClick="login_submit_Click" Text="Login" Width="80px" />
+                 </td>
+             </tr>
+         </table>
+   
+    </div>
+        
 
-            if ($("#txtName").val() == "Salar" && $("#txtPassword").val() == "123123") {
-                window.open("home.html");
-            }
-            else {
-                window.alert("Username or Password is wrong");
-            }
-        });
-
-        });
 
 
-        </script>
+    </div>
+    </form>
+</body>
 
-    <div style="transform:translate(200px,60px)">
-     <table id ="tblLogin" style="background-color:lightblue;color:white;">
-        <tr>
-            <td>
-                Please Enter your Name
-            </td>
-            <td>
-                <input id ="txtName" type="text" />
-                <div id ="NameValidator" style="display:none; color:Red;">Name is missing</div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Please Enter your Password
-            </td>
-            <td>
-                <input id ="txtPassword" type="password" />
-                <div id ="PassValidator" style="display:none; color:Red;">Password is missing</div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan ="2" style="text-align:right;">
-                <input id ="btnLogin" type="button" value="Login" />
-                </td>
-        </tr>
-        </table>
-        </div>
 </asp:Content>
 

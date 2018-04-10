@@ -6,7 +6,6 @@
         <siteMapNode url="task2.aspx" title="TASK # 2"  description="" />
       <siteMapNode url="task3.aspx" title="TASK # 3"  description="">
         <siteMapNode url="task3home.aspx" title="Home"  description=""/>
-        <siteMapNode url="task3login.aspx" title="Login"  description=""/>
         <siteMapNode url="task3product.aspx" title="My Products"  description=""/>
         <siteMapNode url="task3contact.aspx" title="Contact Us"  description=""/>
       </siteMapNode>
@@ -19,6 +18,7 @@
     <siteMapNode url="disconnected.aspx" title="Dissconnected Classes"  description="" />
   <siteMapNode url="linq.aspx" title="LINQ"  description="" />
   <siteMapNode url="silverlight.aspx" title="Silver Light"  description="" />
+      <siteMapNode url="task3login.aspx" title="Login"  description=""/>
     </siteMapNode>
   
   
